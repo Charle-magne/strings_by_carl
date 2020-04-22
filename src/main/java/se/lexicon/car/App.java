@@ -18,31 +18,31 @@ public class App
         convertToCharArray_10();
         charToString_11();
     }
-
+    //-----------------------------------------------------------------------------
     public static void lengthOfString_00(){
 
         String s1 = "java";
         System.out.println(s1.length());
     }
-
+    //-----------------------------------------------------------------------------
     public static void indexPos6_01(){
 
         String s1 = "Long example sentence";
         System.out.println(s1.substring(6,7)); // Printing out whatever is at index position 6 (and stopping right before 7).
     }
-
+    //-----------------------------------------------------------------------------
     public static void indexPosOfChar_02(){
 
         String s1 = "Even longer example sentence";
         System.out.println(s1.indexOf("o")); // Printing out the index position of the first letter o it can find.
     }
-
+    //-----------------------------------------------------------------------------
     public static void substring_03(){
 
         String s1 = "Ok this is not as long!";
         System.out.println(s1.substring(11, s1.length()-1));
     }
-
+    //-----------------------------------------------------------------------------
     public static void capsOrNoCaps_04(){
 
         String s1 = "CAPS EQUALS SCREAMING!";
@@ -53,20 +53,20 @@ public class App
         s1 = lowerCase.toUpperCase();
         System.out.println(s1);
     }
-
+    //-----------------------------------------------------------------------------
     public static void javaIsWorst_05(){
 
         String s1 = "Java is the worst programming language!";
         String s2 = s1.replace("worst", "best");
         System.out.println(s2);
     }
-
+    //-----------------------------------------------------------------------------
     public static void trimThoseTabs_06(){
 
         String s1 = "\tJ\ta\tv\ta\t";
         System.out.println(s1.trim());
     }
-
+    //-----------------------------------------------------------------------------
     public static void parseInt_07(){
 
         int a = 20;
@@ -74,7 +74,7 @@ public class App
         String year = b.concat("20");
         System.out.println(year);
     }
-
+    //-----------------------------------------------------------------------------
     public static void oilAndWater_08(){
 
         String s1 = "Oil and Water";
@@ -87,7 +87,7 @@ public class App
             System.out.println(array1[i]);
         }
     }
-
+    //-----------------------------------------------------------------------------
     public static void splitString_09(){
 
         String s1 = "Carl,Susie,Fredrick,Bob,Erik";
@@ -103,7 +103,7 @@ public class App
             System.out.println(names[i]);
         }
     }
-
+    //-----------------------------------------------------------------------------
     public static void convertToCharArray_10(){
 
         String a = "ThisShouldBeConverted";
@@ -115,7 +115,7 @@ public class App
             System.out.println(); // Existerar bara utifall du kör alla 11 metoderna på raken; det gör nummer 11 lättare att läsa.
         }
     }
-
+    //-----------------------------------------------------------------------------
     public static void charToString_11(){
 
         char[] a = {'J','a','v','a'};
