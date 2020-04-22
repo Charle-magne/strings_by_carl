@@ -2,6 +2,8 @@ package se.lexicon.car;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
+import java.util.Arrays;
+
 /**
  * Hello world!
  *
@@ -10,6 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
+
         lengthOfString_00();
         indexPos6_01();
         indexPosOfChar_02();
@@ -19,6 +22,9 @@ public class App
         trimThoseTabs_06();
         parseInt_07();
         oilAndWater_08();
+        splitString_09();
+        convertToCharArray_10();
+        charToString_11();
     }
 
     public static void lengthOfString_00(){
@@ -88,5 +94,39 @@ public class App
         for (int i=0; i<array1.length; i++){
             System.out.println(array1[i]);
         }
+    }
+
+    public static void splitString_09(){
+
+        String s1 = "Carl,Susie,Fredrick,Bob,Erik";
+        String[] names = new String[5];
+
+        names[0] = s1.substring(0,s1.indexOf("S")-1);                   //Det här gränsar till FULKOD.
+        names[1] = s1.substring(s1.indexOf("S"), s1.indexOf("F")-1);    //
+        names[2] = s1.substring(s1.indexOf("F"), s1.indexOf("B")-1);    //
+        names[3] = s1.substring(s1.indexOf("B"), s1.indexOf("E")-1);    //
+        names[4] = s1.substring(s1.indexOf("E"));                       //
+
+        for (int i=0; i<names.length; i++) {
+            System.out.println(names[i]);
+        }
+    }
+
+    public static void convertToCharArray_10(){
+
+        String a = "ThisShouldBeConverted";
+        char[] b = new char[a.length()];
+
+        for (int i=0; i<a.length(); i++){
+            b[i] = a.charAt(i);
+            System.out.print(b[i]+"\t");
+        }
+    }
+
+    public static void charToString_11(){
+
+        char[] a = {'J','a','v','a'};
+        String b = new String(a);
+        System.out.println(b);
     }
 }
