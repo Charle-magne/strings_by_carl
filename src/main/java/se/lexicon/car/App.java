@@ -1,13 +1,5 @@
 package se.lexicon.car;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
-import java.util.Arrays;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -120,6 +112,7 @@ public class App
         for (int i=0; i<a.length(); i++){
             b[i] = a.charAt(i);
             System.out.print(b[i]+"\t");
+            System.out.println(); // Existerar bara utifall du kör alla 11 metoderna på raken; det gör nummer 11 lättare att läsa.
         }
     }
 
